@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.aeps.justpe.business",
+      "sha256_cert_fingerprints": [
+        "A2:A7:4D:B6:F4:D9:CE:99:F4:ED:9F:AB:25:36:34:1F:2C:BF:A1:D9:CF:CE:1D:A1:3F:FF:75:44:2B:54:67:B2"
+      ]
+    }
+  }
+]
