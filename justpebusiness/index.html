@@ -54,11 +54,11 @@ function getQueryParam(paramName) {
     return urlObj.searchParams.get(paramName); // Get the value of the parameter
 }
 
-var token=getQueryParam("refcode");
+var token=getQueryParam("distributor");
 console.log(token)
-var playURL=encodeURIComponent("https://play.google.com/store/apps/details?id=com.app.justpe.payments&referrer=https://justref.justpe.in/user?refcode="+token);
+var playURL=encodeURIComponent("https://play.google.com/store/apps/details?id=com.aeps.justpe.business&referrer=https://referral.justpe.in/justpebusiness?distributor="+token);
         console.log(playURL);
-var androidIntentUrl="intent://www.justref.justpe.in/user"+window.location.search+"#Intent;scheme=https;package=com.app.justpe.payments;S.browser_fallback_url="+playURL+";end";
+var androidIntentUrl="intent://www.referral.justpe.in/user"+window.location.search+"#Intent;scheme=https;package=com.aeps.justpe.business;S.browser_fallback_url="+playURL+";end";
 
 
 //var androidIntentUrl="intent://www.referral.justpe.in/justpebusiness"+window.location.search+"#Intent;scheme=https;package=com.aeps.justpe.business;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.app.justpe.payments%26referrer%3Dhttps%3A%2F%2Fjustref.justpe.in%2Fuser%3Frefcode%3DANPBAU16;end";
